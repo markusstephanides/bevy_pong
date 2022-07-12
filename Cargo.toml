@@ -9,3 +9,4 @@ edition = "2021"
 bevy = { version = "0.7.0" }
 rand = "0.8.5"
 min-max = "0.1"
+bevy_prototype_debug_lines = "0.6.1"

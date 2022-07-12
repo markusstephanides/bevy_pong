@@ -9,7 +9,7 @@ pub fn setup_game_over(mut commands: Commands, windows: Res<Windows>, asset_serv
     commands
         .spawn_bundle(TextBundle {
             text: Text::with_section(
-                if game.winner == pong::GameWinner::Player1 { "You win!" } else { "You lose!" },
+                if game.winner == pong::GameWinner::Player1 { format!("You won! Score: {}", game.score) } else { format!("You lost! Score: {}", game.score) },
                 TextStyle {
                     font: asset_server.load("fonts/arial.ttf"),
                     font_size: 40.0,
